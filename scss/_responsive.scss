@@ -1,0 +1,312 @@
+@media all and (max-width:768px) {
+    header {
+        .logo {
+            margin-right: 15px;
+        }
+    }
+    .has-sides {
+        .slider {
+            .slick-side {
+                .slide-content {
+                    bottom: 8px;
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .block {
+            .has-sides {
+                display: block;
+                .right-side {
+                    .slider {
+                        width: 735px;
+                    }
+                    .grid-container {
+                        grid-template-columns: auto;
+                    }
+                }
+                .left-side {
+                    >div {
+                        margin-top: 50px;
+                    }
+                }
+            }
+            .main-post__content {
+                bottom: 45%;
+            }
+            .progress-bar {
+                top: 55%;
+            }
+            .carousel {
+                width: auto;
+            }
+            .two-columns {
+                display: block;
+            }
+            .lastest {
+                .container {
+                    display: block;
+                    .left {
+                        margin-top: 25px;
+                    }
+                }
+            }
+            .col-md-8 {
+                width: 100%;
+            }
+            .col-md-4 {
+                width: 100%;
+            }
+            .archives {
+                padding-top: 15px;
+                .grid-container {
+                    grid-template-columns: auto;
+                    .grid-item {
+                        .news-details {
+                            p {
+                                font-size: 16px;
+                                padding: 8px 0;
+                                width: 215px;
+                            }
+                        }
+                    }
+                    figure {
+                        width: auto;
+                    }
+                }
+            }
+            .contact-us {
+                display: block;
+                padding-top: 100px;
+                .contact-form {
+                    margin-left: 0;
+                    .fields {
+                        display: block;
+                        .input {
+                            width: 100%;
+                            margin-right: 0;
+                        }
+                        .big-field {
+                            margin-right: 0;
+                            .input {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .sign-in {
+                padding-top: 65px;
+                .sign-body {
+                    width: auto;
+                    padding: 0 20px;
+                    .sign-forms {
+                        width: auto;
+                        .input {
+                            width: 100%;
+                        }
+                        .btn {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .grid {
+                padding-top: 50px;
+                .grid-container {
+                    grid-template-columns: auto;
+                }
+            }
+            .news {
+                padding-top: 65px;
+            }
+            .inside-paper {
+                padding: 80px 0;
+                .container {
+                    .has-sides {
+                        display: block;
+                    }
+                    .right {
+                        .paper {
+                            .news-details {
+                                h4 {
+                                    padding-bottom: 15px;
+                                }
+                                p {
+                                    width: 365px;
+                                    font-size: 15px;
+                                    line-height: 40px;
+                                }
+                            }
+                        }
+                    }
+                    .left {
+                        margin-top: 25px;
+                    }
+                }
+            }
+            .personal-page {
+                padding-top: 80px;
+                .page-content {
+                    display: block;
+                    .fields {
+                        .two-fields {
+                            display: block;
+                        }
+                        .input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .columns {
+            li {
+                .form {
+                    display: block;
+                    .btn {
+                        margin-top: 15px;
+                    }
+                }
+            }
+            .social {
+                a {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width:375px) {
+    .topbar {
+        font-size: 0;
+        i {
+            display: block;
+            font-size: 15px;
+        }
+        .about {
+            font-size: 12px;
+        }
+        .social {
+            a {
+                margin-right: 18px;
+            }
+        }
+    }
+    header {
+        .logo {
+            margin: 0;
+        }
+        nav {
+            .container-fluid {
+                .search-input {
+                    margin: 0;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    main {
+        .block {
+            .has-sides {
+                padding-top: 200px;
+                .right-side {
+                    .slider {
+                        width: 335px;
+                    }
+                    .grid-container {
+                        .grid-item {
+                            width: 335px;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+            .main-post__title {
+                font-size: 15px;
+            }
+            .carousel {
+                .main-post video {
+                    width: auto;
+                    max-width: auto;
+                }
+            }
+            .progress-bar {
+                top: unset;
+                bottom: 25px;
+                width: 300px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+            .main-post__content {
+                bottom: 8%;
+            }
+            .archives {
+                padding-top: 130px;
+                .grid-item {
+                    .news-details {
+                        p {
+                            font-size: 16px;
+                            padding: 8px 0;
+                            width: 215px;
+                        }
+                    }
+                }
+                figure {
+                    width: auto;
+                }
+            }
+            .grid {
+                .grid-container {
+                    .grid-item {
+                        width: 335px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .inside-paper {
+                .container {
+                    .right {
+                        .paper {
+                            display: block;
+                            .news-details {
+                                margin-top: 15px;
+                                p {
+                                    width: auto;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .personal-page {
+                .page-content {
+                    padding: 30px;
+                    .changeable {
+                        .image-upload {
+                            display: block;
+                            text-align: center;
+                            .btn {
+                                margin: 0;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                    .buttons {
+                        .black-btn {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
