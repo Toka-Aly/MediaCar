@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/custom1.css">
+    <link rel="stylesheet" href="scss/custom.css">
+
 </head>
 
 <body dir="rtl">
@@ -69,72 +70,66 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="logo">
-                        <a class="navbar-brand" href="https://mediacar.sa/ar">
+                        <a class="navbar-brand" href="http://127.0.0.1:5501/index.html#">
                             <figure>
-                                <img src=" https://mediacar.sa/web_files/images/logo.png " class="img-fluid" alt="Responsive image">
+                                <img src="images/logo.png" class="img-fluid" alt="Responsive image">
                             </figure>
                         </a>
                     </div>
-                    <form class="d-flex search-input" action="https://mediacar.sa/ar/products" method="get">
-
-
-                        <input class="form-control me-2" type="text" name="search" placeholder="بحث في الموقع" value="" aria-label="Search">
-
-
-                        <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                    <form class="d-flex search-input">
+                        <input class="form-control me-2" type="search" placeholder="بحث في الموقع" aria-label="Search">
+                        <i class="fa fa-search"></i>
                     </form>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  mb-2 mb-lg-0">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="https://mediacar.sa/ar/categoriesflater1">
-                                    أخبار محلية
+                                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5501/news.html">
+                                    أخبار
                                 </a>
-
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="https://mediacar.sa/ar/categoriesflater3">
-                                    أخبار دولية
-                                </a>
-
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="https://mediacar.sa/ar/categoriesflater6">
+                                <a class="nav-link" href="#">
                                     سيارات جديدة
                                 </a>
-
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="https://mediacar.sa/ar/categoriesflater17">
+                                <a class="nav-link" href="#">
                                     فيديو
                                 </a>
-
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="https://mediacar.sa/ar/categoriesflater7">
-                                    خطط مستقبلية
-                                </a>
-
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="https://mediacar.sa/ar/categoriesflater18">
-                                    نسخ خاصة
-                                </a>
-
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="https://mediacar.sa/ar/categoriesflater9">
+                                <a class="nav-link" href="#">
                                     تجارب السيارات
                                 </a>
-
                             </li>
-
-
-
-
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    نسخ خاصة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    نصائح
+                                </a>
+                            </li>
                             <li class="nav-item dropdown">
-                                <button onclick="myFunction()" class="dropbtn btn">
-                                    أقسام اخري</button>
-
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    أقسام أخرى
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">تقارير صحفية</a></li>
+                                    <li><a class="dropdown-item" href="#"> خطط مستقبلية</a></li>
+                                    <li><a class="dropdown-item" href="#"> خلل مصنعى </a></li>
+                                    <li><a class="dropdown-item" href="#">استدعاء </a></li>
+                                    <li><a class="dropdown-item" href="#"> استحواذ</a></li>
+                                    <li><a class="dropdown-item" href="#"> سيارات الجيل الجديد </a></li>
+                                    <li><a class="dropdown-item" href="#">تجارب سيارات </a></li>
+                                    <li><a class="dropdown-item" href="#"> معارض السيارات </a></li>
+                                    <li><a class="dropdown-item" href="#"> نسخ خاصة </a></li>
+                                    <li><a class="dropdown-item" href="#"> قوانين</a></li>
+                                    <li><a class="dropdown-item" href="#"> أشاعات </a></li>
+                                    <li><a class="dropdown-item" href="#"> شاحنات</a></li>
+                                </ul>
                             </li>
                         </ul>
 
@@ -143,8 +138,6 @@
             </nav>
 
         </div>
-
-
     </header>
     <main>
         <div class="block">
@@ -281,7 +274,7 @@
                         </div>
                         <div class="grid-container">
                             <div class="grid-item">
-                                <a href="#">
+                                <a href="http://127.0.0.1:5501/news-reports.html">
                                     <div class="img-section">
                                         <figure>
                                             <img src="images/2019-Ford-Explorer-02.png" class="img-fluid" alt="Responsive image">
@@ -303,7 +296,7 @@
                                 </a>
                             </div>
                             <div class="grid-item">
-                                <a href="#">
+                                <a href="http://127.0.0.1:5501/news-reports.html">
                                     <div class="img-section">
                                         <figure>
                                             <img src="images/best-cars-to-buy-in-different-price-ranges-2019.png" class="img-fluid" alt="Responsive image">
@@ -325,7 +318,7 @@
                                 </a>
                             </div>
                             <div class="grid-item">
-                                <a href="#">
+                                <a href="http://127.0.0.1:5501/news-reports.html">
                                     <div class="img-section">
                                         <figure>
                                             <img src="images/2019-Ford-Explorer-02.png" class="img-fluid" alt="Responsive image">
@@ -347,7 +340,7 @@
                                 </a>
                             </div>
                             <div class="grid-item">
-                                <a href="#">
+                                <a href="http://127.0.0.1:5501/news-reports.html">
                                     <div class="img-section">
                                         <figure>
                                             <img src="images/best-cars-to-buy-in-different-price-ranges-2019.png" class="img-fluid" alt="Responsive image">
@@ -369,7 +362,7 @@
                                 </a>
                             </div>
                             <div class="grid-item">
-                                <a href="#">
+                                <a href="http://127.0.0.1:5501/news-reports.html">
                                     <div class="img-section">
                                         <figure>
                                             <img src="images/2019-Ford-Explorer-02.png" class="img-fluid" alt="Responsive image">
@@ -391,7 +384,7 @@
                                 </a>
                             </div>
                             <div class="grid-item">
-                                <a href="#">
+                                <a href="http://127.0.0.1:5501/news-reports.html">
                                     <div class="img-section">
                                         <figure>
                                             <img src="images/best-cars-to-buy-in-different-price-ranges-2019.png" class="img-fluid" alt="Responsive image">
@@ -413,7 +406,7 @@
                                 </a>
                             </div>
                             <div class="grid-item">
-                                <a href="#">
+                                <a href="http://127.0.0.1:5501/news-reports.html">
                                     <div class="img-section">
                                         <figure>
                                             <img src="images/2019-Ford-Explorer-02.png" class="img-fluid" alt="Responsive image">
@@ -470,7 +463,7 @@
                             </div>
                             <div class="cards">
                                 <div class="card">
-                                    <a href="#">
+                                    <a href="http://127.0.0.1:5501/news-reports.html">
                                         <figure>
                                             <img src="images/news.png" class="img-fluid" alt="Responsive image">
                                         </figure>
@@ -489,7 +482,7 @@
                                     </a>
                                 </div>
                                 <div class="card">
-                                    <a href="#">
+                                    <a href="http://127.0.0.1:5501/news-reports.html">
                                         <figure>
                                             <img src="images/news.png" class="img-fluid" alt="Responsive image">
                                         </figure>
@@ -508,7 +501,7 @@
                                     </a>
                                 </div>
                                 <div class="card">
-                                    <a href="#">
+                                    <a href="http://127.0.0.1:5501/news-reports.html">
                                         <figure>
                                             <img src="images/news.png" class="img-fluid" alt="Responsive image">
                                         </figure>

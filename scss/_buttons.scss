@@ -1,7 +1,7 @@
 .black-btn {
     color: white;
     background: #000000;
-    border: 1ps solid transparent;
+    border: 1px solid transparent;
     transition: .5s;
     &:hover {
         color: #000000;
@@ -13,4 +13,11 @@
 .white-btn {
     background: white;
     color: #000000;
+    border: 1px solid transparent;
+    transition: .5s;
+    &:hover {
+        color: white;
+        background: none;
+        border: 1px solid white;
+    }
 }

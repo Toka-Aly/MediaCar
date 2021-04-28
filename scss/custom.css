@@ -34,13 +34,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 15px;
 }
 
 .has-sides .slider .slick-side .slide-content p span {
   font-size: 14px;
   background: #DC7E12;
-  width: 95px;
-  height: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,6 +50,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 15px;
+  padding: 5px;
+  font-weight: 700;
 }
 
 .has-sides .slider .slick-side .img-wrapper {
@@ -223,7 +224,7 @@ header {
           box-shadow: 0px 10px 20px #6161611a;
   padding: 15px 0;
   position: absolute;
-  top: 46px;
+  top: 50px;
   left: 0;
   width: 100%;
   z-index: 99;
@@ -256,6 +257,19 @@ header.scrolled nav .container-fluid .navbar-collapse {
   padding-right: 15px;
 }
 
+header.scrolled nav .container-fluid a,
+header.scrolled nav .container-fluid button {
+  font-size: 18px;
+}
+
+header.scrolled nav .container-fluid button {
+  padding: 0;
+}
+
+header.scrolled nav .container-fluid .search-input i {
+  left: 15px;
+}
+
 header.fixed {
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -266,7 +280,7 @@ header.fixed {
 .black-btn {
   color: white;
   background: #000000;
-  border: 1ps solid transparent;
+  border: 1px solid transparent;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -280,13 +294,23 @@ header.fixed {
 .white-btn {
   background: white;
   color: #000000;
+  border: 1px solid transparent;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.white-btn:hover {
+  color: white;
+  background: none;
+  border: 1px solid white;
 }
 
 nav .container-fluid {
   padding: 0;
 }
 
-nav .container-fluid a {
+nav .container-fluid a,
+nav .container-fluid button {
   font-weight: 700;
   font-size: 20px;
   color: #000000;
@@ -303,7 +327,7 @@ nav .container-fluid .dropdown-toggle::after {
 nav .container-fluid .dropdown-toggle::before {
   content: "\f107";
   position: absolute;
-  top: 10px;
+  top: 4px;
   left: -3px;
   font-family: FontAwesome;
   display: inline-block;
@@ -315,9 +339,14 @@ nav .container-fluid .navbar-collapse {
   padding-top: 30px;
 }
 
+nav .container-fluid .navbar-collapse .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 nav .container-fluid .navbar-collapse .navbar-nav .nav-link {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 nav .container-fluid .navbar-collapse .dropdown-menu {
@@ -368,7 +397,7 @@ nav .container-fluid .search-input .form-control::placeholder {
 
 nav .container-fluid .search-input i {
   position: absolute;
-  left: 15px;
+  left: 44px;
   top: 24px;
 }
 
@@ -409,7 +438,6 @@ main .block .news .page-heading a {
 
 main .block .news .page-heading i {
   color: rgba(109, 109, 109, 0.9);
-  font-weight: 100;
   font-size: 10px;
   padding: 0 15px;
 }
@@ -440,7 +468,6 @@ main .block .has-sides .right-side .grid-container {
 
 main .block .has-sides .right-side .grid-container .grid-item {
   background: #ffffff;
-  width: 454px;
 }
 
 main .block .has-sides .right-side .grid-container .grid-item .grid-content {
@@ -467,14 +494,14 @@ main .block .has-sides .right-side .grid-container .grid-item .img-section .oran
   position: absolute;
   bottom: -9px;
   left: 18px;
-  padding: 0 10px;
+  padding: 10px;
 }
 
 main .block .has-sides .right-side .grid-container .grid-item .img-section .purple-box {
   position: absolute;
   bottom: -9px;
   left: 18px;
-  padding: 0 10px;
+  padding: 10px;
 }
 
 main .block .has-sides .left-side .heading {
@@ -677,6 +704,13 @@ main .block .has-sides .left-side .categories a {
   padding: 0 10px;
   color: black;
   width: auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main .block .has-sides .left-side .categories a:hover {
+  background: #b11e24;
+  color: white;
 }
 
 main .block .carousel {
@@ -978,7 +1012,7 @@ main .block .two-columns {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 150;
+  padding-top: 150px;
 }
 
 main .block .two-columns .heading {
@@ -1129,8 +1163,8 @@ main .block .lastest .container .left .buttons .black-btn {
   font-size: 20px;
 }
 
-main .block .lastest .container .left .buttons .black-btn figure {
-  margin-left: 15px;
+main .block .lastest .container .left .buttons .black-btn i {
+  margin: 0 15px;
 }
 
 main .block .lastest .container .left .buttons .black-btn:hover {
@@ -1243,15 +1277,9 @@ main .block .sign-in .sign-forms .black-btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #000000;
   border-radius: 6px;
   padding: 15px 0;
-  color: white;
   margin-bottom: 30px;
-}
-
-main .block .sign-in .sign-forms .black-btn:hover {
-  background: black;
 }
 
 main .block .sign-in .sign-forms .buttons {
@@ -1282,7 +1310,6 @@ main .block .personal-page .page-heading a {
 
 main .block .personal-page .page-heading i {
   color: rgba(109, 109, 109, 0.9);
-  font-weight: 100;
   font-size: 10px;
   padding: 0 15px;
 }
@@ -1565,7 +1592,6 @@ main .block .inside-paper .page-heading a {
 
 main .block .inside-paper .page-heading i {
   color: rgba(109, 109, 109, 0.9);
-  font-weight: 100;
   font-size: 10px;
   padding: 0 15px;
 }
@@ -1895,7 +1921,6 @@ main .block .grid .grid-container {
 
 main .block .grid .grid-container .grid-item {
   background: #ffffff;
-  width: 440px;
 }
 
 main .block .grid .grid-container .grid-item .grid-content {
@@ -1932,26 +1957,25 @@ main .block .grid .grid-container .grid-item .img-section .purple-box {
   padding: 0 10px;
 }
 
-.page-heading {
+main .page-heading {
   padding-bottom: 40px;
 }
 
-.page-heading a {
+main .page-heading a {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.page-heading i {
+main .page-heading i {
   color: rgba(255, 255, 255, 0.9);
-  font-weight: 100;
   font-size: 10px;
   padding: 0 15px;
 }
 
-.page-heading span {
+main .page-heading span {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.paragraph p {
+main .paragraph p {
   font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1962,18 +1986,18 @@ main .block .grid .grid-container .grid-item .img-section .purple-box {
           flex-direction: column;
 }
 
-.paragraph p span {
+main .paragraph p span {
   padding: 15px 0;
 }
 
-.smaller {
+main .smaller {
   margin-right: 74px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.smaller figure {
+main .smaller figure {
   width: 30px;
 }
 
@@ -2044,12 +2068,50 @@ footer .columns .social a {
   margin-left: 30px;
 }
 
+@media all and (max-width: 1024px) {
+  main .block .has-sides {
+    display: block;
+  }
+  main .block .has-sides .right-side {
+    width: 100%;
+  }
+  main .block .has-sides .left-side .subscribe {
+    margin-top: 50px;
+  }
+  main .block .has-sides .slider {
+    margin: 0 auto;
+  }
+  main .block .inside-paper .container .has-sides {
+    display: block;
+  }
+  main .block .inside-paper .container .left {
+    margin-top: 50px;
+  }
+  main .block .grid .grid-container {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  main .block .grid .grid-container .grid-item {
+    width: 100%;
+  }
+  .left-side.col-md-4 {
+    width: 100%;
+  }
+}
+
 @media all and (max-width: 768px) {
+  header.scrolled .container-fluid.d-flex {
+    display: block !important;
+  }
+  header .container-fluid.d-flex {
+    display: block !important;
+  }
   header .logo {
     margin-right: 15px;
   }
   .has-sides .slider .slick-side .slide-content {
     bottom: 8px;
+    word-break: break-word;
   }
   .has-sides .slider .slick-side .slide-content h2 {
     font-size: 20px;
@@ -2057,24 +2119,25 @@ footer .columns .social a {
   main .block .has-sides {
     display: block;
   }
-  main .block .has-sides .right-side .slider {
-    width: 735px;
-  }
   main .block .has-sides .right-side .grid-container {
     -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-columns: auto;
+  }
+  main .block .has-sides .right-side .grid-container .grid-item {
+    width: 100%;
   }
   main .block .has-sides .left-side > div {
     margin-top: 50px;
   }
   main .block .main-post__content {
-    bottom: 45%;
+    bottom: 30%;
   }
   main .block .progress-bar {
-    top: 55%;
+    top: 87%;
   }
   main .block .carousel {
     width: auto;
+    height: 500px;
   }
   main .block .two-columns {
     display: block;
@@ -2092,16 +2155,11 @@ footer .columns .social a {
     width: 100%;
   }
   main .block .archives {
-    padding-top: 15px;
+    padding-top: 115px;
   }
   main .block .archives .grid-container {
     -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  main .block .archives .grid-container .grid-item .news-details p {
-    font-size: 16px;
-    padding: 8px 0;
-    width: 215px;
+    grid-template-columns: auto;
   }
   main .block .archives .grid-container figure {
     width: auto;
@@ -2126,9 +2184,6 @@ footer .columns .social a {
   main .block .contact-us .contact-form .fields .big-field .input {
     width: 100%;
   }
-  main .block .sign-in {
-    padding-top: 65px;
-  }
   main .block .sign-in .sign-body {
     width: auto;
     padding: 0 20px;
@@ -2147,10 +2202,10 @@ footer .columns .social a {
   }
   main .block .grid .grid-container {
     -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-columns: auto;
   }
-  main .block .news {
-    padding-top: 65px;
+  main .block .grid .grid-container .grid-item {
+    width: 100%;
   }
   main .block .inside-paper {
     padding: 80px 0;
@@ -2190,11 +2245,23 @@ footer .columns .social a {
   footer .columns .social a {
     margin-left: 15px;
   }
+  nav .container-fluid .search-input .form-control {
+    width: 100%;
+    margin-top: 15px;
+  }
 }
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 540px) {
+  nav .container-fluid .search-input {
+    margin-right: 0;
+    margin: 15px 0;
+  }
   .topbar {
     font-size: 0;
+  }
+  .topbar .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .topbar i {
     display: block;
@@ -2202,6 +2269,99 @@ footer .columns .social a {
   }
   .topbar .about {
     font-size: 12px;
+    margin-left: 28px;
+  }
+  .topbar .social a {
+    margin-right: 18px;
+  }
+  header.scrolled .logo {
+    margin: 0;
+    display: none;
+  }
+  header.scrolled .container-fluid.d-flex {
+    display: block !important;
+  }
+}
+
+@media all and (max-width: 414px) {
+  header.scrolled .logo {
+    display: none;
+    margin: 0;
+    display: none;
+  }
+  header.scrolled .container-fluid.d-flex {
+    display: block !important;
+    display: block !important;
+  }
+  .left-side.col-md-4 {
+    display: block;
+  }
+  .topbar {
+    font-size: 0;
+  }
+  .topbar .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .topbar i {
+    display: block;
+    font-size: 15px;
+  }
+  .topbar .about {
+    font-size: 12px;
+    margin-left: 28px;
+  }
+  .topbar .social a {
+    margin-right: 18px;
+  }
+  header nav .container-fluid .search-input {
+    margin: 0;
+    margin-top: 15px;
+  }
+  main .block .has-sides .right-side .grid-container .grid-item {
+    width: 100%;
+  }
+  main .block .archives {
+    padding-top: 55px;
+  }
+  main .block .contact-us .contact-form {
+    padding: 30px;
+  }
+  main .block .contact-us .left {
+    margin-top: 50px;
+  }
+  main .block .inside-paper .container .right .paper .news-details p {
+    width: 300px;
+  }
+  main .block .inside-paper .container .has-sides {
+    display: block;
+  }
+  nav .container-fluid .search-input .form-control {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  body {
+    padding-top: 184px;
+  }
+  header.scrolled .container-fluid.d-flex {
+    display: block !important;
+  }
+  .topbar {
+    font-size: 0;
+  }
+  .topbar .row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .topbar i {
+    display: block;
+    font-size: 15px;
+  }
+  .topbar .about {
+    font-size: 12px;
+    margin-left: 28px;
   }
   .topbar .social a {
     margin-right: 18px;
@@ -2213,22 +2373,32 @@ footer .columns .social a {
     margin: 0;
     margin-top: 15px;
   }
-  main .block .has-sides {
-    padding-top: 200px;
-  }
-  main .block .has-sides .right-side .slider {
-    width: 335px;
-  }
-  main .block .has-sides .right-side .grid-container .grid-item {
-    width: 335px;
-    margin: 0 auto;
-  }
   main .block .main-post__title {
     font-size: 15px;
+  }
+  main .block .carousel {
+    height: 465px;
   }
   main .block .carousel .main-post video {
     width: auto;
     max-width: auto;
+  }
+  main .block .has-sides .left-side .advertise .advertise-content {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  main .block .has-sides .left-side .cards .card a {
+    display: block;
+    text-align: -webkit-center;
+  }
+  main .block .has-sides .left-side .cards .card a .card-content .card-heading {
+    margin: 15px 0;
+  }
+  main .block .has-sides .right-side .grid-container .grid-item .grid-content p {
+    word-break: break-word;
+  }
+  main .block .has-sides .right-side .slider {
+    width: 100%;
   }
   main .block .progress-bar {
     top: unset;
@@ -2278,6 +2448,102 @@ footer .columns .social a {
     margin-top: 15px;
   }
   main .block .personal-page .page-content .buttons .black-btn {
+    width: 100%;
+  }
+  main .block .article .article-heading h2 {
+    font-size: 25px;
+  }
+  main .block .two-columns .cards .card a {
+    display: block;
+    text-align: center;
+  }
+  main .block .two-columns .cards .card a .card-content .card-heading {
+    margin-top: 20px;
+  }
+  main .block .lastest .container .right .newspaper .news-details h4 {
+    font-size: 18px;
+  }
+  main .block .contact-us .contact-form {
+    padding: 30px;
+  }
+  main .block .contact-us .left {
+    margin-top: 50px;
+  }
+  main .block .sign-in .sign-forms .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .paragraph p {
+    font-size: 18px;
+  }
+  .pagination {
+    overflow: auto;
+    width: 335px;
+  }
+  footer .columns li .form .form-group .form-control {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 320px) {
+  main .block .lastest .container .left .buttons .black-btn {
+    width: 100%;
+  }
+  main .block .lastest .container .left .buttons .white-btn {
+    width: 100%;
+  }
+  main .block .lastest .container .right .newspaper .news-details h4 {
+    font-size: 16px;
+  }
+  main .block .lastest .container .right .newspaper .news-details p {
+    font-size: 18px;
+  }
+  main .block .progress-bar {
+    width: 200px;
+  }
+  main .block .inside-paper .container .left .buttons .black-btn {
+    width: 100%;
+  }
+  main .block .grid .grid-container .grid-item {
+    width: auto;
+  }
+  main .block .article {
+    padding: 40px;
+  }
+  main .block .article .comments-section .comment-field {
+    display: block;
+  }
+  main .block .article .comments-section .comment-field .input {
+    margin: 25px 0;
+    padding: 5px;
+  }
+  nav .container-fluid .search-input .form-control {
+    width: 100%;
+  }
+  footer .columns li .form .form-group .form-control {
+    width: 100%;
+  }
+  .btn-danger {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 280px) {
+  main .block .about-us .about-content {
+    padding: 40px 20px;
+  }
+  main .block .has-sides .right-side {
+    width: 100%;
+  }
+  main .block .lastest .container .left .buttons .white-btn {
+    width: 100%;
+  }
+  .paragraph p {
+    font-size: 18px;
+  }
+  footer .columns li .form .form-group .form-control {
     width: 100%;
   }
 }

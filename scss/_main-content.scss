@@ -12,7 +12,6 @@
                     }
                     i {
                         color: rgba($color: #6D6D6D, $alpha: 0.9);
-                        font-weight: 100;
                         font-size: 10px;
                         padding: 0 15px;
                     }
@@ -33,7 +32,6 @@
                         margin-top: 60px;
                         .grid-item {
                             background: #ffffff;
-                            width: 454px;
                             .grid-content {
                                 padding: 22px 20px;
                                 .grid-heading {
@@ -55,13 +53,13 @@
                                     position: absolute;
                                     bottom: -9px;
                                     left: 18px;
-                                    padding: 0 10px;
+                                    padding: 10px;
                                 }
                                 .purple-box {
                                     position: absolute;
                                     bottom: -9px;
                                     left: 18px;
-                                    padding: 0 10px;
+                                    padding: 10px;
                                 }
                             }
                         }
@@ -205,6 +203,11 @@
                             padding: 0 10px;
                             color: black;
                             width: auto;
+                            transition: .3s;
+                            &:hover {
+                                background: #b11e24;
+                                color: white;
+                            }
                         }
                     }
                 }
@@ -424,7 +427,7 @@
             .two-columns {
                 display: flex;
                 align-items: center;
-                padding-top: 150;
+                padding-top: 150px;
                 .heading {
                     display: flex;
                     align-items: center;
@@ -522,8 +525,8 @@
                         margin-right: auto;
                         .buttons {
                             .black-btn {
-                                figure {
-                                    margin-left: 15px;
+                                i {
+                                    margin: 0 15px;
                                 }
                                 display: flex;
                                 width: 285px;
@@ -606,14 +609,9 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        color: #000000;
                         border-radius: 6px;
                         padding: 15px 0;
-                        color: white;
                         margin-bottom: 30px;
-                        &:hover {
-                            background: black;
-                        }
                     }
                     .buttons {
                         display: flex;
@@ -635,7 +633,6 @@
                     }
                     i {
                         color: rgba($color: #6D6D6D, $alpha: 0.9);
-                        font-weight: 100;
                         font-size: 10px;
                         padding: 0 15px;
                     }
@@ -850,7 +847,6 @@
                     }
                     i {
                         color: rgba($color: #6D6D6D, $alpha: 0.9);
-                        font-weight: 100;
                         font-size: 10px;
                         padding: 0 15px;
                     }
@@ -1104,7 +1100,6 @@
                     margin-top: 60px;
                     .grid-item {
                         background: #ffffff;
-                        width: 440px;
                         .grid-content {
                             padding: 22px 20px;
                             .grid-heading {
@@ -1139,39 +1134,35 @@
                 }
             }
         }
-    }
-    
-    .page-heading {
-        padding-bottom: 40px;
-        a {
-            color: rgba($color: white, $alpha: 0.9);
-        }
-        i {
-            color: rgba($color: white, $alpha: 0.9);
-            font-weight: 100;
-            font-size: 10px;
-            padding: 0 15px;
-        }
-        span {
-            color: rgba($color: white, $alpha: 0.9);
-        }
-    }
-    
-    .paragraph {
-        p {
-            font-size: 20px;
-            display: flex;
-            flex-direction: column;
+        .page-heading {
+            padding-bottom: 40px;
+            a {
+                color: rgba($color: white, $alpha: 0.9);
+            }
+            i {
+                color: rgba($color: white, $alpha: 0.9);
+                font-size: 10px;
+                padding: 0 15px;
+            }
             span {
-                padding: 15px 0;
+                color: rgba($color: white, $alpha: 0.9);
             }
         }
-    }
-    
-    .smaller {
-        margin-right: 74px;
-        align-items: center;
-        figure {
-            width: 30px;
+        .paragraph {
+            p {
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+                span {
+                    padding: 15px 0;
+                }
+            }
+        }
+        .smaller {
+            margin-right: 74px;
+            align-items: center;
+            figure {
+                width: 30px;
+            }
         }
     }
