@@ -63,7 +63,7 @@
                     bottom: 8px;
                     word-break: break-word;
                     h2 {
-                        font-size: 20px;
+                        font-size: 17px;
                     }
                 }
             }
@@ -77,9 +77,6 @@
                     .grid-container {
                         -ms-grid-columns: auto;
                         grid-template-columns: auto;
-                        .grid-item {
-                            width: 100%;
-                        }
                     }
                 }
                 .left-side {
@@ -148,9 +145,9 @@
             .sign-in {
                 .sign-body {
                     width: auto;
-                    padding: 0 20px;
                     .sign-forms {
                         width: auto;
+                        padding: 0 20px;
                         .input {
                             width: 100%;
                         }
@@ -726,6 +723,13 @@
                                 width: 100%;
                             }
                         }
+                    }
+                }
+            }
+            .sign-in {
+                .sign-body {
+                    h2 {
+                        font-size: 20px;
                     }
                 }
             }

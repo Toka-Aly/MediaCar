@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
-.has-sides .slider {
-  width: 938px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
 .has-sides .slider .slick-side {
   position: relative;
 }
@@ -1712,10 +1705,6 @@ main .block .inside-paper .container .left .buttons .social a {
   margin-left: 30px;
 }
 
-main .block .news-report .slider-for figure img {
-  width: 938px;
-}
-
 main .block .news-report .slider-nav .slick-side {
   margin-left: 15px;
 }
@@ -2114,7 +2103,7 @@ footer .columns .social a {
     word-break: break-word;
   }
   .has-sides .slider .slick-side .slide-content h2 {
-    font-size: 20px;
+    font-size: 17px;
   }
   main .block .has-sides {
     display: block;
@@ -2122,9 +2111,6 @@ footer .columns .social a {
   main .block .has-sides .right-side .grid-container {
     -ms-grid-columns: auto;
     grid-template-columns: auto;
-  }
-  main .block .has-sides .right-side .grid-container .grid-item {
-    width: 100%;
   }
   main .block .has-sides .left-side > div {
     margin-top: 50px;
@@ -2186,10 +2172,10 @@ footer .columns .social a {
   }
   main .block .sign-in .sign-body {
     width: auto;
-    padding: 0 20px;
   }
   main .block .sign-in .sign-body .sign-forms {
     width: auto;
+    padding: 0 20px;
   }
   main .block .sign-in .sign-body .sign-forms .input {
     width: 100%;
@@ -2539,6 +2525,9 @@ footer .columns .social a {
   }
   main .block .lastest .container .left .buttons .white-btn {
     width: 100%;
+  }
+  main .block .sign-in .sign-body h2 {
+    font-size: 20px;
   }
   .paragraph p {
     font-size: 18px;
