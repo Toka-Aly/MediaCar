@@ -427,6 +427,12 @@ main .block .news .page-heading {
 
 main .block .news .page-heading a {
   color: rgba(109, 109, 109, 0.9);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+main .block .news .page-heading a:hover {
+  color: black;
 }
 
 main .block .news .page-heading i {
@@ -440,14 +446,7 @@ main .block .news .page-heading span {
 }
 
 main .block .has-sides {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 150px;
-}
-
-main .block .has-sides .right-side {
-  margin-left: 30px;
 }
 
 main .block .has-sides .right-side .grid-container {
@@ -999,12 +998,6 @@ main .block .hide-on-mobile {
 }
 
 main .block .two-columns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 150px;
 }
 

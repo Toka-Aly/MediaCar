@@ -9,6 +9,10 @@
                     padding-bottom: 40px;
                     a {
                         color: rgba($color: #6D6D6D, $alpha: 0.9);
+                        transition: .5s;
+                        &:hover {
+                            color: black;
+                        }
                     }
                     i {
                         color: rgba($color: #6D6D6D, $alpha: 0.9);
@@ -21,10 +25,8 @@
                 }
             }
             .has-sides {
-                display: flex;
                 padding-top: 150px;
                 .right-side {
-                    margin-left: 30px;
                     .grid-container {
                         display: grid;
                         grid-template-columns: auto auto;
@@ -425,8 +427,6 @@
                 }
             }
             .two-columns {
-                display: flex;
-                align-items: center;
                 padding-top: 150px;
                 .heading {
                     display: flex;
