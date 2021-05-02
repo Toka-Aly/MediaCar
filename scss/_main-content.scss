@@ -524,10 +524,10 @@
                     .left {
                         margin-right: auto;
                         .buttons {
+                            i {
+                                margin: 0 15px;
+                            }
                             .black-btn {
-                                i {
-                                    margin: 0 15px;
-                                }
                                 display: flex;
                                 width: 285px;
                                 height: 55px;
@@ -830,8 +830,8 @@
                                 align-items: center;
                                 color: white;
                                 font-size: 20px;
-                                figure {
-                                    padding-left: 15px;
+                                i {
+                                    margin: 0 15px;
                                 }
                             }
                         }

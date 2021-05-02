@@ -1130,6 +1130,10 @@ main .block .lastest .container .left {
   margin-right: auto;
 }
 
+main .block .lastest .container .left .buttons i {
+  margin: 0 15px;
+}
+
 main .block .lastest .container .left .buttons .black-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1147,10 +1151,6 @@ main .block .lastest .container .left .buttons .black-btn {
   border: 1px solid #ffffff;
   margin-bottom: 20px;
   font-size: 20px;
-}
-
-main .block .lastest .container .left .buttons .black-btn i {
-  margin: 0 15px;
 }
 
 main .block .lastest .container .left .buttons .black-btn:hover {
@@ -1560,8 +1560,8 @@ main .block .archives .grid-container .grid-item .news-details .btn {
   font-size: 20px;
 }
 
-main .block .archives .grid-container .grid-item .news-details .btn figure {
-  padding-left: 15px;
+main .block .archives .grid-container .grid-item .news-details .btn i {
+  margin: 0 15px;
 }
 
 main .block .inside-paper {
