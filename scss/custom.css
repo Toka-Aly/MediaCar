@@ -1396,15 +1396,11 @@ main .block .personal-page .page-content .buttons .black-btn {
 
 main .block .contact-us {
   padding-top: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 main .block .contact-us .contact-form {
   background: white;
   padding: 60px;
-  margin-left: 30px;
 }
 
 main .block .contact-us .contact-form h2 {
